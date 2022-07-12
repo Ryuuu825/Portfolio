@@ -10,111 +10,31 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <style>
-        .container{
-            margin-left:auto;
-            margin-right:auto;
-            margin-top:5%;
-        }
-
-        a {
-            color : #58a6ff;
-            text-decoration: none;
-        }
-        .label {
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            border-radius: 1px;
-        }
-
-        .card-img-top {
-            cursor: pointer;
-        }
-        .cl-disable {
-            color: rgba(0, 0, 0, 0.3);
-            cursor: not-allowed;
-        }
-
-        .cl-disable:hover {
-            color: rgba(0, 0, 0, 0.3);
-        }
-        .pop_up {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 9999;
-            display: none;
-        }
-
-        .pop_up_content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #fff;
-            width: 50%;
-            height: 50%;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        }
-
-        .pop_up_content iframe {
-            width: 100%;
-            height: 100%;
-        }
+    .container{
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:5%;
+    }
     </style>
-
-    <script>
-        function show_pop_up() {
-            var pop_up = $(".pop_up");
-            pop_up.style.display = "block";
-        }
-        function close_pop_up() {
-            var pop_up = $(".pop_up");
-            pop_up.style.display = "none";
-            $("#popup_iframe").src = "";
-        }
-
-        function show_pop_up_content(isVideo , url)
-        {
-            show_pop_up();
-            if (isVideo)
-            {
-                let my_iframe = $("#popup_iframe");
-                my_iframe.style.display = "block";
-                my_iframe.src = url;
-            }
-        }
-
-        function $(id) {
-            return document.querySelector(id);
-        }
-
-    </script>
 </head>
     <body class="body bg-dark">
-    <div class="pop_up" onclick="close_pop_up()">
-        <div class="pop_up_content" >
-            <iframe autoplay=0 control="0" src="" frameborder="0" id="popup_iframe" style="display:none" ></iframe>
-        </div>
-    </div>
     <div class="container w-75">
         <h1 class="text-light m-2">Ken Lee</h1>
         <nav class="navbar navbar-expand">
             <div class="container-fluid">
-              <a class="navbar-brand text-light" href="../index.html">Home</a>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                    <a class="nav-link" href="#"  style="color:#718096">Skills</a>
+                        <a class="nav-link" href="../index.html"  style="color:#718096">Home</a>
+                        </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./Projects.html"  style="color:#718096">Projects</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="./Testimonial.html" style="color:#718096">Testimonial</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link disabled" style="color:#718096">Disabled</a>
+                        <a class="navbar-brand text-light mx-2" href="#" style="color:#718096">Skills</a>
                     </li>
                 </ul>
               </div>
@@ -130,170 +50,180 @@
             </div>
         </nav>
         <div class="m-5"></div>
-        <h1 class="text-light mb-3">
-            Project 
+
+        <h1 class="text-light mb-3 mt-5 ">
+            Programming Languages 
         </h1>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <div>
-                        <img src="../static/project_watame1.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">Watame Fan Page</h5>
-                      <p class="card-text">
-                          A fan page for watame. 
-                      </p>
-                      <p class="card-text">
-                        Learnt how to create responsive web pages using plain css and js.
-                      </p>
-                      <div class="row">
-                            <div class="col-sm-4 text-primary">
-                                HTML5
-                            </div>
-                            <div class="col-sm-3 text-primary">
-                                CSS
-                            </div>
-                            <div class="col-sm-5 text-primary">
-                                JavaScript
-                            </div>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                        <a href="https://ryuuu825.github.io/Watame-Fan-Page-ITE3006/" class="card-link">
-                            Check it out
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
-                                <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
-                            </svg>
-                        </a>
+        <!-- The level that how i know this language -->
+        <div class="text-white mt-3 mb-2 p-3 font-weight-bold fs-4">Intermediate</div>
+        <div class="d-flex flex-wrap flex-row">
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/c.png" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">C</span>
+            </div>
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/cpp.png" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">C++</span>
+            </div>
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/cs.svg" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">C#</span>
+            </div>
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/java.svg" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">Java</span>
+            </div>
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/python.svg" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">Python</span>
+            </div>
+        </div>  
+
+        <div class="text-white mt-3 mb-2 p-3 font-weight-bold fs-4">Better than Hello World</div>
+        <div class="d-flex flex-wrap flex-row">
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/javascript.svg" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">JavaScript</span>
+            </div>
+
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/php.svg" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">PHP</span>
+            </div>
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/rust.svg" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">Rust</span>
+            </div>
+        </div>  
+
+        <div class="text-white mt-3 mb-2 p-3 font-weight-bold fs-4">Just Hello World ; ) <span style="font-size:small;">(going to learn in furture)</span> </div>
+        <div class="d-flex flex-wrap flex-row">
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="mt-2 text-center">arm64 Assembly</div>
+            </div>
+            <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                <div class="text-center w-100" >
+                    <img src="../icon/go.svg" alt="" class="bg-dark w-100 h-100">
+                </div>
+                <span class="mt-3">Go</span>
+            </div>
+        </div>  
+
+        <h1 class="text-light mb-3 mt-5">
+            Others 
+        </h1>
+        <div class="text-white my-3">(self assessment)</div>
+        <div class="d-flex flex-wrap flex-column justify-content-between flex-wrap">
+            <div class="row">
+                <div class="mb-4 col-5">
+                    <span class="mt-2 text-white">MySQL</span>
+                    <div class="progress w-75">
+                        <div class="progress-bar w-50"></div>
                     </div>
                 </div>
-
-                <div class="card mt-5" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">LC-3 Virtual Machine</h5>
-                      <p class="card-text">
-                          A simple virtual machine written in c/c++.
-                      </p>
-                      <p class="card-text">
-                            Learned the "magic" behind a assembly instruction.
-                      </p>
-                      <p class="card-text">
-                          <span class="text-primary">C++</span>
-                      </p>
-                    </div>
-                    <div class="card-body">
-                        <a href="https://github.com/Ryuuu825/Stinky" class="card-link" target="_blank">
-                            Check it out
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
-                                <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
-                            </svg>
-                        </a>
+                <div class="mb-4 col-5">
+                    <span class="mt-2 text-white">Relational Database</span>
+                    <div class="progress w-75">
+                        <div class="progress-bar w-50"></div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <div>
-                        <img src="../static/project_cms_1.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="card-body">
-                      <h5 class="card-title">
-                            Computer Management System ( frontend )
-                      </h5>
-                      <p class="card-text">
-                          A CMS for electronic appliance retail store. This is a Window Forms frontend application. 
-                      </p>
-                      <p class="card-text">
-                        Learnt how to create a native application targeting Windows Platform. 
-                      </p>
-                      <p class="card-text">
-                        <span class="text-primary">C#</span>
-                      </p>
-                    </div>
-                    <div class="card-body">
-                        <a href="" class="card-link cl-disable pe-none">
-                            Check it out
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
-                                <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
-                            </svg>
-                        </a>
+            <div class="row">
+                <div class="mb-4 col-5">
+                    <span class="mt-2 text-white">Entity Framework</span>
+                    <div class="progress w-75">
+                        <div class="progress-bar w-50"></div>
                     </div>
                 </div>
-
-                <div class="card mt-5" style="width: 18rem;">
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">
-                            Hello-World
-                      </h5>
-                      <p class="card-text">
-                          A List of program that print "Hello World" in different languages with multi-threading.
-                      </p>
-                    </div>
-                    <div class="card-body">
-                        <a href="https://github.com/Ryuuu825/Hello-World" class="card-link" target="_blank">
-                            Check it out
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
-                                <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
-                            </svg>
-                        </a>
+                <div class="mb-4 col-5">
+                    <span class="mt-2 text-white">Fluent API</span>
+                    <div class="progress w-75">
+                        <div class="progress-bar w-50"></div>
                     </div>
                 </div>
-
             </div>
-            <div class="col-sm-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                      <h5 class="card-title">
-                            Computer Management System ( backend )
-                      </h5>
-                      <p class="card-text">
-                          A CMS for electronic appliance retail store. This is a Restful API for the CMS system.
-                      </p>
-                      <p class="card-text">
-                        Learnt how to develop a Restful API with ASP.NET Core, and use Entity Framework & Fluent API with Xampp MySQL.
-                        Besides, I also learned how to manage a project team. 
-                      </p>
-                      <p class="card-text">
-                        <span class="text-primary">C#</span>
-                      </p>
-                    </div>
-                    <div class="card-body">
-                        <a href="" class="card-link cl-disable pe-none">
-                            Check it out
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
-                                <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
-                            </svg>
-                        </a>
+            <div class="row">
+                <div class="mb-4 col-5">
+                    <span class="mt-2 text-white">ASP.Net MVC Framework</span>
+                    <div class="progress w-75">
+                        <div class="progress-bar w-75"></div>
                     </div>
                 </div>
-
-                <div class="card mt-5" style="width: 18rem;">
-                    
-                    <div class="card-body">
-                      <h5 class="card-title">
-                            PyGame Test
-                      </h5>
-                      <p class="card-text">
-                            A simple application that uses PyGame to draw many rectangle and apply basic physics to them.
-                      </p>
-                    </div>
-                    <div class="card-body">
-                        <a href="../static/pygame_text.m4v" class="card-link" target="#popup_iframe" onclick="show_pop_up();show_pop_up_content(true, '../static/pygame_text.m4v');return false;">
-                            Demo ( source code is lost )
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-forward-fill" viewBox="0 0 16 16">
-                                <path d="m9.77 12.11 4.012-2.953a.647.647 0 0 0 0-1.114L9.771 5.09a.644.644 0 0 0-.971.557V6.65H2v3.9h6.8v1.003c0 .505.545.808.97.557z"/>
-                            </svg>
-                        </a>
+                <div class="mb-4 col-5">
+                    <span class="mt-2 text-white">Flask</span>
+                    <div class="progress w-75">
+                        <div class="progress-bar w-25"></div>
                     </div>
                 </div>
-
             </div>
-        </div>
-        
+            <div class="row">
+                <div class="mb-4 col-5">
+                    <span class="mt-2 text-white">Bootstrap5</span>
+                    <div class="progress w-75">
+                        <div class="progress-bar w-50"></div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+
+
+
+        <h1 class="text-light mb-3 mt-5">
+            Tools 
+        </h1>
+
+        <div class="d-flex flex-wrap flex-row">
+            
+            <div class="d-flex flex-wrap">
+                <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                    <div class="text-center w-100" >
+                        <img src="../icon/git.svg" alt="" class="bg-dark w-100 h-100">
+                    </div>
+                    <span class="mt-2">Git</span>
+                </div>
+                <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                    <div class="text-center w-100" >
+                        <img src="../icon/lazygit.png" alt="" class="bg-dark w-100 h-100">
+                    </div>
+                    <span class="mt-2">LazyGit</span>
+                </div>
+                <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                    <div class="text-center w-100" >
+                        <img src="" alt="" class="bg-dark w-100 h-100">
+                    </div>
+                    <span class="mt-2">ZSH</span>
+                </div>
+                <div class="text-white mx-3 d-flex flex-column align-items-center justify-content-between" style="width:50px">
+                    <div class="text-center w-100" >
+                        <img src="../icon/postman.svg" alt="" class="bg-dark w-100 h-100">
+                    </div>
+                    <span class="mt-2">Postman</span>
+                </div>
+            </div>
+        </div>  
+       
+
+        <div style="height:100px"></div>
+
     </div>  
+
+    
     </body>
 </html>
